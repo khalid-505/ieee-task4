@@ -1,0 +1,253 @@
+:root {
+  --primary: #244f80;
+  --secondary: #345b91;
+  --background: #eef1f9;
+  --white: #ffffff;
+  --text: #333333;
+  --green: #2e9e59;
+  --orange: #e85b0c;
+  --light-orange: #fff1dc;
+  --yellow: #e5b51b;
+  --red: #e65b48;
+  --footer: #14213d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  color: var(--primary);
+}
+header h1 span {
+  color: var(--red);
+}
+
+header p {
+  font-size: 13px;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+nav ul a {
+  text-decoration: none;
+  color: var(--secondary);
+  transition: 0.2s;
+}
+nav ul a:hover {
+  color: var(--red);
+}
+hr:nth-of-type(1) {
+  background-color: var(--primary);
+  height: 5px;
+  margin-top: 10px;
+}
+
+/* setion1  */
+#section1 {
+  background-color: #e4ecff;
+  margin: 0;
+  padding: 20px 150px;
+}
+
+#container1 {
+  padding: 20px;
+  background-color: var(--background);
+  border-radius: 15px;
+  box-shadow: 1px 0 3px 2px #b2b2b2;
+}
+
+.welcome h1 {
+  font-size: 20px;
+}
+.welcome hr {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.welcome p {
+  width: 510px;
+}
+.welcome .welcome-p1::first-letter {
+  color: var(--green);
+  font-size: 36px;
+  float: left;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 10px;
+}
+.welcome .welcome-p2 {
+  margin-top: 20px;
+}
+.welcome img {
+  float: right;
+  border-radius: 10px;
+  height: 130px;
+  margin-left: 10px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 2px 2px 4px 1px #b7b7b7;
+  transition: 0.3s;
+}
+.welcome img:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 4px 4px 1px #b7b7b7;
+}
+
+/* topics */
+.topics {
+  margin-top: 40px;
+}
+.topics h1 {
+  font-size: 20px;
+}
+.topics hr {
+  margin-bottom: 15px;
+}
+.topics-boxs {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.topics .box {
+  border: 3px solid black;
+  padding: 5px;
+  height: 85px;
+  width: 185px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 4px 1px #b7b7b7;
+  transition: 0.3s;
+}
+.topics .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 4px 1px #b7b7b7;
+}
+.topics .box h1 {
+  font-size: 15px;
+  color: var(--secondary);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.topics .box p {
+  font-size: 10px;
+  text-align: center;
+}
+.topics .selector {
+  position: relative;
+}
+.topics .box-model {
+  position: relative;
+}
+.topics .selector::before {
+  content: "New";
+  position: absolute;
+  background-color: var(--red);
+  font-size: 9px;
+  border-radius: 10px;
+  top: 1px;
+  right: 1px;
+  color: white;
+  padding: 5px;
+}
+.topics .box-model::before {
+  content: "Hot";
+  position: absolute;
+  background-color: var(--green);
+  font-size: 9px;
+  border-radius: 10px;
+  top: 1px;
+  right: 1px;
+  color: white;
+  padding: 5px;
+}
+
+/* Actions */
+
+.actions {
+  margin-top: 20px;
+}
+.actions h1 {
+  font-size: 20px;
+}
+.actions hr {
+  margin-bottom: 15px;
+}
+
+.actions p {
+  font-size: 13px;
+}
+
+.actions button {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 1px 4px 1px #b7b7b7;
+  transition: 0.3s;
+}
+.actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 4px 1px #b7b7b7;
+}
+
+.actions .action-p2 {
+  padding: 6px 10px;
+
+  background-color: #ffdcb4;
+  margin-top: 10px;
+  position: relative;
+}
+
+.actions .action-p2::before {
+  content: "";
+  position: absolute;
+  background-color: var(--orange);
+  width: 5px;
+  height: 100%;
+  left: -1px;
+  top: 0px;
+}
+
+.actions .action-p3 {
+  margin-top: 5px;
+  opacity: 0.35;
+}
+.actions .action-p4 {
+  margin-top: 50px;
+}
+
+/* footer */
+footer {
+  background-color: var(--footer);
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+footer p {
+  color: var(--white);
+}
+footer p span {
+  color: #87b9ff;
+}
